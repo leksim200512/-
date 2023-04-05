@@ -1,0 +1,728 @@
+
+/* цвета */
+
+:root{
+  --color1:rgb(31, 31, 31);
+  --color2:rgb(255, 228, 72);
+  --color3:rgb(102, 101, 101);
+  --color4:rgb(255, 255, 255);
+  --index: calc(1vw + 1vh); 
+}
+
+.color1{
+  color: var(--color1);
+}
+.color2{
+  color: var(--color2);
+}
+.color3{
+  color: var(--color3);
+}
+.color4{
+  color: var(--color4);
+}
+.bg1{
+  background: var(--color4);
+}
+
+/* цвета */
+
+/* навигация */
+
+*{
+  transition:  0.3s ease-out;
+}
+
+
+a{
+  text-decoration: none;
+  color: var(--color3);
+  
+}
+
+a:hover{
+  color: var(--color4);
+}
+
+header{
+  width: 100%;
+  height: 1200px; 
+  background: linear-gradient(0, rgb(10, 19, 20, 1) 10%, rgb(10, 19, 20, 0) 90%),url(../img/img_header/taxi-sign-at-night.jpg);
+  background-position: center center;  
+  background-size: cover;
+  background-repeat: no-repeat;   
+}
+
+.border-nav{
+  margin-top: 30px;
+  height: 3px;
+  width: 100%;
+  opacity: 0.1;
+  background-color: var(--color4);
+}
+
+.dot-log{
+  color: var(--color4);
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.dot{
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color2);
+  border-radius: 50%;
+}
+
+.bi-car-front-fill{
+  fill:var(--color2);
+}
+
+.navbar-nav{
+ margin: 0 auto;
+}
+
+.navbar-nav li a{
+  font-weight: 600;
+  margin: 0 15px;
+  font-size: 20px;
+  color: var(--color4);
+  position: relative;
+}
+
+.navbar-nav li a:after {
+  display: block;
+  content: "";
+  background-color:var(--color2);
+  height: 3px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  top: 86px;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.navbar-nav li a:hover:after,
+.navbar-nav li a:focus:after {
+  width: 100%;
+  z-index: 1;
+}
+
+.border-nav{
+  margin-top: 30px;
+  height: 3px;
+  width: 100%;
+  opacity: 0.1;
+  background-color: var(--color4);
+}
+
+.navbar-nav li a:hover{
+  color: var(--color3);
+}
+
+/* навигация */
+
+.yandex-logo{
+  width: 100%;
+  height: 100px;
+}
+
+.yandex-logo h1{
+  margin-top: 350px;
+  font-size: 90px;
+  color: var(--color4);
+  font-family: 'Oswald', sans-serif;
+}
+
+.yandex-logo h1::first-letter{
+  font-size: 120px;
+}
+.yandex-logo span{
+  margin-left: 5px;
+  font-size: 120px;
+}
+
+.timer{
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  right: 150px;
+  top: 450px;
+ }
+
+.line{
+  width: 100px;
+  height: 3px;
+  background-color: var(--color4);
+  position: absolute;
+  right: -150px;
+  top: 165px;
+ }
+.data-line{
+  font-size: 15px;
+  width: 100px;
+  position: absolute;
+  right: -145px;
+  top: 140px;
+ }
+
+.timer__items-minus-minus{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color4);
+  opacity: 0.3;
+   text-align: right;
+}
+.timer__items-minus {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color4);
+  opacity: 0.3;
+   text-align: right;
+}
+.timer__items {
+  font-weight: 700;
+  font-size: 70px;
+  color: var(--color4);
+  text-align: right;
+}
+.timer__items-plus {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--color4);
+  opacity: 0.3;
+  text-align: right;
+}
+.timer__items-plus-plus {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--color4);
+  opacity: 0.3;
+  text-align: right;
+}
+
+main{
+  box-shadow: inset 0 80% 50% #000;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(4deg, rgb(10, 19, 20), rgb(10, 19, 20)); 
+  padding-bottom: 10px
+}
+
+.abaut{
+  color: var(--color3);
+  
+}
+.abaut h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.income, .orders,.encouragement{
+  height: 200px;
+  color: var(--color4);
+  position: relative;
+}
+
+.income:after {
+  display: block;
+  content: "";
+  background-color:var(--color2);
+  height: 3px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  top: 230px;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.income:hover:after,
+.income:focus:after {
+  width: 100%;
+  z-index: 1;
+}
+.income:hover{
+  cursor: pointer;
+  color: var(--color3);
+}
+
+.orders:after {
+  display: block;
+  content: "";
+  background-color:var(--color2);
+  height: 3px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  top: 230px;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.orders:hover:after,
+.orders:focus:after {
+  width: 100%;
+  z-index: 1;
+}
+
+.orders:hover{
+  cursor: pointer;
+  color: var(--color3);
+}
+
+.encouragement:after {
+  display: block;
+  content: "";
+  background-color:var(--color2);
+  height: 3px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  top: 230px;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.encouragement:hover:after,
+.encouragement:focus:after {
+  width: 100%;
+  z-index: 1;
+}
+
+.encouragement:hover{
+  cursor: pointer;
+  color: var(--color3);
+}
+
+.four-steps{
+  margin-top: 200px;
+  
+}
+.four-steps h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  padding-bottom: 100px;
+}
+
+.content-steps{
+  display: block;
+  align-items: center;
+}
+
+.content-steps , .content-rate{
+  width: 100%;
+  height: 300px;
+  display: grid;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid var(--color4);
+  border-radius: 20px;
+
+}
+
+footer{
+  padding: 200px 0 100px;
+  width: 100%;
+  height:100%;
+  background: linear-gradient(to bottom,rgb(10, 19, 20)5%,rgb(11, 20, 21)15%, #31313a);
+}
+
+.footer-form h1 ,.footer-form h2{
+  font-size: 27px;
+  color:var(--color4);
+}
+
+.footer-form h1{
+  font-size: 50px;
+  color: var(--color4);
+  font-family: 'Oswald', sans-serif;
+}
+
+.footer-form h1::first-letter{
+  font-size: 60px;
+}
+.footer-form span{
+  font-size: 60px;
+}
+
+.phone{
+  font-family: 'Oswald', sans-serif;
+}
+
+.footer-icons svg{
+  margin:0 20px;
+
+}
+
+.footer-icons svg:hover{
+  fill: var(--color3);
+  cursor: pointer;
+}
+.form-j{
+  position: relative;
+  display: inline-block;
+  width: 70%;
+  height: 300px;
+  text-align: center;
+}
+
+.glow-button {
+  border: none;
+  background-color: #00000000;
+  cursor: pointer;
+  border-radius:10px ;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  box-shadow: 0 0 40px 40px var(--color2) inset, 0 0 0 0 var(--color2);
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--color4);
+  transition: .15s ease-in-out;
+}
+.glow-button:hover {
+  box-shadow: 0 0 10px 0 var(--color2) inset, 0 0 10px 4px var(--color2);
+  color: var(--color2);
+}
+
+input:focus{
+  color: var(--color3);
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 1px var(--color2) solid;
+  border: 1px var(--color2) solid;
+}
+
+label{
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.name , .tel{
+  border-radius: 10px;
+  background-color: rgb(194, 194, 194);
+  text-transform: capitalize; 
+  text-align: center;
+  width: 60%;
+  height: 40px;
+  border: #31313a;
+  outline:var(--color2);
+  padding: 0 20px;
+  line-height: 40px;
+  margin-top: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+.name2 , .tel2{
+  border-radius: 10px;
+  background-color: rgb(194, 194, 194);
+  text-transform: capitalize; 
+  text-align: center;
+  width: 85%;
+  height: 40px;
+  border: #31313a;
+  outline:var(--color2);
+  padding: 0 20px;
+  line-height: 40px;
+  margin-top: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.modal-content{
+  display: block;
+  align-items: end;
+  background-color: rgb(20, 23,24 );
+}
+
+@media only screen and (max-width: 1200px) { 
+  header {
+    height: 800px;
+    background: linear-gradient(0, rgb(10, 19, 20, 1) 10%, rgb(10, 19, 20, 0) 90%),url(../img/img_header/1200px.jpg);
+    background-position: center center;  
+    background-repeat: no-repeat; 
+  } 
+  .border-nav{
+    display: none;
+  }
+  header svg{
+    display: none;
+  }
+  .yandex-logo{
+    display: none;
+  }
+  .main{
+    height: 100%;
+  }
+  .form-j{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: 300px;
+    text-align: center;
+  }
+  
+  
+}
+@media only screen and (max-width: 990px) { 
+  header {
+    height: 550px;
+    background: linear-gradient(0, rgb(10, 19, 20, 1) 10%, rgb(10, 19, 20, 0) 90%),url(../img/img_header/989px.jpg);
+    background-position: center center;  
+    background-repeat: no-repeat; 
+  } 
+  .border-nav{
+    display: none;
+  }
+  header svg{
+    display: none;
+  }
+  .yandex-logo{
+    display: none;
+  }
+  .navbar-nav li a:after {
+    display: none;
+  }
+  .navbar-nav li a:hover:after,
+  .navbar-nav li a:focus:after {
+    display: none;
+  }
+  .navbar-nav li a:hover{
+    display: none;
+  }
+  .income:after {
+    display: none;
+  }
+  
+  .income:hover:after,
+  .income:focus:after {
+    display: none;
+  }
+  .income:hover{
+    display: none;
+  }
+  
+  .orders:after {
+    display: none;
+  }
+  
+  .orders:hover:after,
+  .orders:focus:after {
+    display: none;
+  }
+  
+  .orders:hover{
+    display: none;
+  }
+  
+  .encouragement:after {
+    display: none;
+  }
+  
+  .encouragement:hover:after,
+  .encouragement:focus:after {
+    display: none;
+  }
+  
+  .encouragement:hover{
+    display: none;
+  }
+  .four-steps{
+    margin-top: 150px;
+  }
+  .main{
+    height: 100%;
+  }
+  .name , .tel{
+    width: 80%;
+  }
+  .form-j{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: 300px;
+    text-align: center;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) { 
+  header {
+    height: 500px;
+    background: linear-gradient(0, rgb(10, 19, 20, 1) 10%, rgb(10, 19, 20, 0) 90%),url(../img/img_header/768px.jpg);
+    background-position: center center;  
+    background-repeat: no-repeat; 
+
+  } 
+  .border-nav{
+    display: none;
+  }
+  header svg{
+    display: none;
+  }
+  .yandex-logo h1{
+    display: none;
+  }
+  .navbar-nav li a:after {
+    display: none;
+  }
+  .navbar-nav li a:hover:after,
+  .navbar-nav li a:focus:after {
+    display: none;
+  }
+  .navbar-nav li a:hover{
+    display: none;
+  }
+  .income:after {
+    display: none;
+  }
+  
+  .income:hover:after,
+  .income:focus:after {
+    display: none;
+  }
+  .income:hover{
+    display: none;
+  }
+  
+  .orders:after {
+    display: none;
+  }
+  
+  .orders:hover:after,
+  .orders:focus:after {
+    display: none;
+  }
+  
+  .orders:hover{
+    display: none;
+  }
+  
+  .encouragement:after {
+    display: none;
+  }
+  
+  .encouragement:hover:after,
+  .encouragement:focus:after {
+    display: none;
+  }
+  
+  .encouragement:hover{
+    display: none;
+  }
+  .name , .tel{
+    width: 80%;
+  }
+  .form-j{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    height: 300px;
+    text-align: center;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) { 
+  header {
+    height: 300px;
+    background: linear-gradient(0, rgb(10, 19, 20, 1) 10%, rgb(10, 19, 20, 0) 90%),url(../img/img_header/480px.jpg);
+    background-position: center center;  
+    background-repeat: no-repeat; 
+  } 
+  .border-nav{
+    display: none;
+  }
+  header svg{
+    display: none;
+  }
+  .yandex-logo h1{
+    display: none;
+  }
+  .navbar-nav li a:after {
+    display: none;
+  }
+  .navbar-nav li a:hover:after,
+  .navbar-nav li a:focus:after {
+    display: none;
+  }
+  .navbar-nav li a:hover{
+    display: none;
+  }
+  .income:after {
+    display: none;
+  }
+  
+  .income:hover:after,
+  .income:focus:after {
+    display: none;
+  }
+  .income:hover{
+    display: none;
+  }
+  
+  .orders:after {
+    display: none;
+  }
+  
+  .orders:hover:after,
+  .orders:focus:after {
+    display: none;
+  }
+  
+  .orders:hover{
+    display: none;
+  }
+  
+  .encouragement:after {
+    display: none;
+  }
+  
+  .encouragement:hover:after,
+  .encouragement:focus:after {
+    display: none;
+  }
+  
+  .encouragement:hover{
+    display: none;
+  }
+  
+  .form-j{
+    width: max-content;
+    margin: 0 auto;
+  }
+  .name , .tel{
+    width: 100%;
+  }
+  
+}
